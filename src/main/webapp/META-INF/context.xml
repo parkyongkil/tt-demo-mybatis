@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE Context>
+<Context antiResourceLocking="true" privileged="true">
+	<Valve className="org.apache.catalina.valves.RemoteAddrValve"
+		allow="127\.\d+\.\d+\.\d+|::1|0:0:0:0:0:0:0:1" />
+	<ResourceLink global="jdbc/testDB" name="jdbc/testDB"
+		type="javax.sql.DataSource" />
+</Context>
