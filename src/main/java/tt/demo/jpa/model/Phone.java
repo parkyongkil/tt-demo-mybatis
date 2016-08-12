@@ -11,7 +11,7 @@ import javax.persistence.*;
 @Entity
 @Table(name="phone")
 @NamedQuery(name="Phone.findAll", query="SELECT p FROM Phone p")
-public class Phone implements Serializable {
+public class Phone extends BaseModel implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@EmbeddedId
